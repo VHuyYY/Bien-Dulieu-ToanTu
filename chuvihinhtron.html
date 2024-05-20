@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" placeholder="Nhập bán kính" id="bk" />
+    <button onclick="getData()">Nhập</button>
+    <p id="Result"></p>
+    <script>
+      function getData() {
+        let r = document.getElementById("bk").value;
+        const PI = 3.14;
+        let cv = 2 * PI * r;
+        document.getElementById("Result").innerHTML = "Chu Vi Hình Tròn: " + cv;
+      }
+    </script>
+  </body>
+</html>
